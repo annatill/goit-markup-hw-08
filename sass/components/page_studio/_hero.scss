@@ -1,0 +1,78 @@
+// .hero {
+//     text-align: center;
+
+//     background-color: $footer-nav-color-background;
+
+
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0px;
+
+//     background-image:
+//         linear-gradient(to right,
+//             rgba(47, 48, 58, 0.4),
+//             rgba(47, 48, 58, 0.4)),
+//         url("../images/backgroud-hero-mobile.jpg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// @media (min-device-pixel-ratio: 2),
+// (min-resolution: 192dpi),
+// (min-resolution: 2dppx) {
+//     .hero {
+//         background-image: 
+//                 url('../images/backgroud-hero-mobile@2x.jpg');
+//             }
+// }
+
+// @media (min-width: 768px) {
+//     .hero {
+//         background-image: 
+//                 url(../images/backgroud-hero-tablet.jpg);
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         .hero {
+//             background-image:
+//                 url(../images/backgroud-hero-tablet@2x.jpg);
+//               }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .hero { 
+//         background-image: 
+//                 url('../images/backgroud-hero.jpg');
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) { 
+//         .hero {
+//             background-image:
+//                 url('../images/backgroud-hero-desctop@2x.jpg');
+//                }
+//     }
+// }
+// .hero__content {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+// }
+
+
+// .hero__title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: $white-color;
+// }
