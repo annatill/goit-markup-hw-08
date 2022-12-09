@@ -7,11 +7,11 @@ body {
     color: $primary-text-color;
 }
 
-main {
-    @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    }
-}
+// main {
+//     @media screen and (max-width: 767px) {
+//     padding-top: 60px;
+//     }
+// }
 
 ul {
     list-style: none;
@@ -78,9 +78,12 @@ textarea::placeholder {
 }
 
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-            padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
         }
 }
 

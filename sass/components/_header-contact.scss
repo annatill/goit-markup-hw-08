@@ -33,13 +33,13 @@
 
 
 .header-contact__link--active {
-    // margin-bottom: 64px;
+    margin-bottom: 64px;
     font-size: 26px;
     // color: $accent-color;
  
     @media screen and (min-width: 380px) and (max-width: 767px) {
         font-size: 34px;
-        margin-bottom: 125px;
+        
         
     }
 
@@ -64,7 +64,7 @@
     &.header-contact__link--active {
             @media screen and (max-width: 768px) {
                 color: $accent-color;
-                margin-top: 32px;
+                // margin-top: 32px;
             }
     
         }
@@ -94,11 +94,11 @@
 
 .header-contact__item {
     &:first-child {
-        @media screen and (max-width: 767px) {
-        transform: translateY(100px);
-        }
-    }
-    
+    //     @media screen and (max-width: 767px) {
+    //     transform: translateY(100px);
+    //     }
+    // }
+
         @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
     }
@@ -107,6 +107,7 @@
     margin-right: 30px;
     }
 
+}
 }
 
 
