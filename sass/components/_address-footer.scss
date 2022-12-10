@@ -1,38 +1,38 @@
-// .address__map-link {
-//     display: inline-block;
-//     margin-bottom: 9px;
+.address__map-link {
+    display: inline-block;
+    margin-bottom: 9px;
 
-//     font-style: normal;
-//     line-height: 1.71;
+    font-style: normal;
+    line-height: 1.71;
 
-//     color: $white-color;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:hover,
-//     &:focus {
-//         color: $accent-color;
-//     }
-// }
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
 
 
-// .address__contact {
-//     display: inline-block;
-//     margin-bottom: 9px;
+.address__contact {
+    display: inline-block;
+    margin-bottom: 9px;
 
-//     font-style: normal;
-//     line-height: 1.71;
+    font-style: normal;
+    line-height: 1.71;
 
-//     color: $footer-nav-color-text;
+    color: $footer-nav-color-text;
 
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-// .address__contact--phone {
-//     margin-bottom: 0;
-// }
+.address__contact--phone {
+    margin-bottom: 0;
+}
 
-// .address__contact:hover,
-// .address__contact:focus {
-//     color: $accent-color;
+.address__contact:hover,
+.address__contact:focus {
+    color: $accent-color;
 
-// }
+}

@@ -297,7 +297,22 @@
           <ul class="command">
             <li class="command__list">
               <div class="command__card">
-                <img src="./images/photocard1.jpg" alt="manigor" width="270" />
+                <img
+                  srcset="
+                    ./images/photocard1-mobile.jpg     450w,
+                    ./images/photocard1-mobile@2x.jpg  900w,
+                    ./images/photocard1-tablet.jpg     354w,
+                    ./images/photocard1-tablet@2x.jpg  708w,
+                    ./images/photocard1-desctop.jpg    270w,
+                    ./images/photocard1-desctop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                  src="./images/photocard1-mobile.jpg"
+                  loading="lazy"
+                  alt="manigor"
+                />
                 <div class="command__card--content">
                   <h3 class="command__card--title">Ігор Дем'яненко</h3>
                   <p lang="en" class="command__card--description">
@@ -355,9 +370,20 @@
             <li class="command__list">
               <div class="command__card">
                 <img
-                  src="./images/photocard2.jpg"
+                  srcset="
+                    ./images/photocard2-mobile.jpg     450w,
+                    ./images/photocard2-mobile@2x.jpg  900w,
+                    ./images/photocard2-tablet.jpg     354w,
+                    ./images/photocard2-tablet@2x.jpg  708w,
+                    ./images/photocard2-desctop.jpg    270w,
+                    ./images/photocard2-desctop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                  src="./images/photocard2-mobile.jpg"
+                  loading="lazy"
                   alt="womanolha"
-                  width="270"
                 />
                 <div class="command__card--content">
                   <h3 class="command__card--title">Ольга Рєпіна</h3>
@@ -416,9 +442,20 @@
             <li class="command__list">
               <div class="command__card">
                 <img
-                  src="./images/photocard3.jpg"
+                  srcset="
+                    ./images/photocard3-mobile.jpg     450w,
+                    ./images/photocard3-mobile@2x.jpg  900w,
+                    ./images/photocard3-tablet.jpg     354w,
+                    ./images/photocard3-tablet@2x.jpg  708w,
+                    ./images/photocard3-desctop.jpg    270w,
+                    ./images/photocard3-desctop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                  src="./images/photocard3-mobile.jpg"
+                  loading="lazy"
                   alt="manmukola"
-                  width="270"
                 />
                 <div class="command__card--content">
                   <h3 class="command__card--title">Микола Тарасов</h3>
@@ -475,9 +512,20 @@
             <li class="command__list">
               <div class="command__card">
                 <img
-                  src="./images/photocard4.jpg"
+                  srcset="
+                    ./images/photocard4-mobile.jpg     450w,
+                    ./images/photocard4-mobile@2x.jpg  900w,
+                    ./images/photocard4-tablet.jpg     354w,
+                    ./images/photocard4-tablet@2x.jpg  708w,
+                    ./images/photocard4-desctop.jpg    270w,
+                    ./images/photocard4-desctop@2x.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                  src="./images/photocard4-mobile.jpg"
+                  loading="lazy"
                   alt="manmuhajlo"
-                  width="270"
                 />
                 <div class="command__card--content">
                   <h3 class="command__card--title">Михайло Єрмаков</h3>
@@ -619,7 +667,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__nav">
-          <a href="./index.html" lang="en" class="logo-fotter">
+          <a href="./index.html" lang="en" class="logo-footer">
             <span class="logo--accent">Web</span>Studio
           </a>
           <address class="address">
@@ -680,7 +728,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form">
           <p class="footer-title">Підпишіться на розсилку</p>
           <form class="form-subscribe">
             <label>

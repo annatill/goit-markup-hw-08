@@ -1,5 +1,5 @@
 .feature-list {
-    display: block;
+    display: inline-block;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
      margin-right: calc(30px * -1);
@@ -12,6 +12,7 @@
 }
 
 .feature-list__functions {
+    
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
      &:nth-child(2n + 1) {
@@ -23,7 +24,15 @@
     }
     
     @media screen and (min-width: 1200px) {
+    
+    height: 248px;
+    // width: 270px;
     flex-basis: calc(100% /4);
+    margin-right: $gap;
+    
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -42,23 +51,11 @@
     background-position: center;
     background-size: contain;
     
-    @media screen and (min-width: 1200px) {
-     width: 270px;
+    // @media screen and (min-width: 1200px) {
+    //  width: 270px;
     
-    }
+    // }
 }
-
-.feature-list__functions {
-
-    @media screen and (min-width: 1200px) {
-    margin-right: $gap;
-
-    &:last-child {
-        margin-right: 0;
-    }
-   }
-}
-
 
 .feature-list__title {
     font-weight: 700;

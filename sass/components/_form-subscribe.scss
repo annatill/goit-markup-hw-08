@@ -1,25 +1,45 @@
-// .form-subscribe__input {
-//     width: 358px;
-//     height: 50px;
-//     margin-right: 12px;
+.form-subscribe__input {
+    width: 450px;
+    height: 50px;
+    margin-right: 12px;
 
-//     background-color: transparent;
+    background-color: transparent;
 
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     border-radius: 4px;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     padding: 16px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 16px 15px;
 
-//     font-size: 16px;
-//     line-height: 1.2;
-//     color: $white-color;
-// }
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white-color;
+    
 
-// .form-subscribe__icon {
-//     position: absolute;
-//     bottom: 13px;
-//     right: 28px;
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+    display: block;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 
-//     fill: $white-color;
-// }
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    }
+}
+
+.form-subscribe__icon {
+    position: absolute;
+    bottom: 13px;
+    right: 28px;
+
+    fill: $white-color;
+}
+
+.footer-form {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+        
+}
 
