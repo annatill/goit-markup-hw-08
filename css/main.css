@@ -149,12 +149,16 @@ textarea::placeholder {
 .header-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
   .header-wrapper {
     position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    justify-content: space-between;
   }
 }
 
@@ -208,6 +212,9 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    position: absolute;
+    top: 8px;
+    right: 15px;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -1045,12 +1052,25 @@ textarea::placeholder {
 .customers-list {
   display: flex;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .customers-list {
+    display: block;
+  }
+}
 @media screen and (max-width: 1199px) {
   .customers-list {
     flex-wrap: wrap;
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .customers-list__item {
+    margin-bottom: 30px;
+  }
+  .customers-list__item:last-child {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (max-width: 767px) {
   .customers-list__item {
     flex-basis: 50%;
@@ -1091,6 +1111,11 @@ textarea::placeholder {
 .customers-list__icon:hover, .customers-list__icon:focus {
   fill: #2196F3;
   border-color: #2196F3;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .customers-list__icon {
+    width: auto;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .customers-list__icon {
@@ -1193,7 +1218,7 @@ textarea::placeholder {
 }
 
 .form-subscribe__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   background-color: transparent;
@@ -1208,6 +1233,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-subscribe__input {
     display: block;
+    width: 450px;
   }
 }
 @media screen and (max-width: 1199px) {
