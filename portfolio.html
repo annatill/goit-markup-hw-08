@@ -23,48 +23,106 @@
         <a href="./index.html" lang="en" class="logo-header">
           <span class="logo--accent">Web</span>Studio
         </a>
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--active"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="/" class="site-nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-contact">
-          <li class="site-nav__item">
-            <a href="mailto:info@devstudio.com" class="header-contact__link">
-              <svg class="header-contact__icon">
-                <use class="icon" href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a href="tel:+380961111111" class="header-contact__link">
-              <svg class="header-contact__icon header-contact__icon--phone">
-                <use
-                  class="icon"
-                  href="./images/icons.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <button
+          class="mobile-menu"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <svg
+            width="24"
+            height="24"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="mobile-menu__icon-menu"
+              href="./images/icons.svg#icon-mobile-menu"
+            ></use>
+            <use
+              class="mobile-menu__icon-cross"
+              href="./images/icons.svg#icon-mobile-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-nav" data-menu id="mobile-nav">
+          <nav>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--active"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="/" class="site-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-contact--position">
+            <ul class="header-contact">
+              <li class="header-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link"
+                >
+                  <svg class="header-contact__icon">
+                    <use
+                      class="icon"
+                      href="./images/icons.svg#icon-envelope"
+                    ></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="header-contact__link header-contact__link--active"
+                >
+                  <svg class="header-contact__icon header-contact__icon--phone">
+                    <use
+                      class="icon"
+                      href="./images/icons.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="header-sosial">
+              <li class="header-sosial__item--size">
+                <a class="header-sosial__link">Instagram</a>
+              </li>
+              <li class="header-sosial__item--size">
+                <span class="header-sosial__item">|</span>
+              </li>
+              <li class="header-sosial__item--size">
+                <a class="header-sosial__link">Twitter</a>
+              </li>
+              <li class="header-sosial__item--size">
+                <span class="header-sosial__item">|</span>
+              </li>
+              <li class="header-sosial__item--size">
+                <a class="header-sosial__link">Facebook</a>
+              </li>
+              <li class="header-sosial__item--size">
+                <span class="header-sosial__item">|</span>
+              </li>
+              <li class="header-sosial__item--size">
+                <a class="header-sosial__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section section--portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filters">
@@ -89,7 +147,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project1.jpg" alt="laptop" width="370" />
+                    <img
+                      srcset="
+                        ./images/project1-mobile.jpg     450w,
+                        ./images/project1-mobile@2x.jpg  900w,
+                        ./images/project1-tablet.jpg     354w,
+                        ./images/project1-tablet@2x.jpg  708w,
+                        ./images/project1-desctop.jpg    270w,
+                        ./images/project1-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project1-mobile.jpg"
+                      loading="lazy"
+                      alt="laptop"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -109,9 +183,21 @@
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
                     <img
-                      src="./images/project2.jpg"
+                      srcset="
+                        ./images/project2-mobile.jpg     450w,
+                        ./images/project2-mobile@2x.jpg  900w,
+                        ./images/project2-tablet.jpg     354w,
+                        ./images/project2-tablet@2x.jpg  708w,
+                        ./images/project2-desctop.jpg    270w,
+                        ./images/project2-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project2-mobile.jpg"
+                      loading="lazy"
                       alt="football"
-                      width="370"
+                      width="100%"
                     />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -134,9 +220,21 @@
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
                     <img
-                      src="./images/project3.jpg"
+                      srcset="
+                        ./images/project3-mobile.jpg     450w,
+                        ./images/project3-mobile@2x.jpg  900w,
+                        ./images/project3-tablet.jpg     354w,
+                        ./images/project3-tablet@2x.jpg  708w,
+                        ./images/project3-desctop.jpg    270w,
+                        ./images/project3-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project3-mobile.jpg"
+                      loading="lazy"
                       alt="seafood"
-                      width="370"
+                      width="100%"
                     />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -157,9 +255,21 @@
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
                     <img
-                      src="./images/project4.jpg"
+                      srcset="
+                        ./images/project4-mobile.jpg     450w,
+                        ./images/project4-mobile@2x.jpg  900w,
+                        ./images/project4-tablet.jpg     354w,
+                        ./images/project4-tablet@2x.jpg  708w,
+                        ./images/project4-desctop.jpg    270w,
+                        ./images/project4-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project4-mobile.jpg"
+                      loading="lazy"
                       alt="headphones"
-                      width="370"
+                      width="100%"
                     />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -179,7 +289,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project5.jpg" alt="boxes" width="370" />
+                    <img
+                      srcset="
+                        ./images/project5-mobile.jpg     450w,
+                        ./images/project5-mobile@2x.jpg  900w,
+                        ./images/project5-tablet.jpg     354w,
+                        ./images/project5-tablet@2x.jpg  708w,
+                        ./images/project5-desctop.jpg    270w,
+                        ./images/project5-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project5-mobile.jpg"
+                      loading="lazy"
+                      alt="boxes"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -198,7 +324,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project6.jpg" alt="imac" width="370" />
+                    <img
+                      srcset="
+                        ./images/project6-mobile.jpg     450w,
+                        ./images/project6-mobile@2x.jpg  900w,
+                        ./images/project6-tablet.jpg     354w,
+                        ./images/project6-tablet@2x.jpg  708w,
+                        ./images/project6-desctop.jpg    270w,
+                        ./images/project6-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project6-mobile.jpg"
+                      loading="lazy"
+                      alt="imac"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -219,7 +361,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project7.jpg" alt="book" width="370" />
+                    <img
+                      srcset="
+                        ./images/project7-mobile.jpg     450w,
+                        ./images/project7-mobile@2x.jpg  900w,
+                        ./images/project7-tablet.jpg     354w,
+                        ./images/project7-tablet@2x.jpg  708w,
+                        ./images/project7-desctop.jpg    270w,
+                        ./images/project7-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project7-mobile.jpg"
+                      loading="lazy"
+                      alt="book"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -240,7 +398,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project8.jpg" alt="label" width="370" />
+                    <img
+                      srcset="
+                        ./images/project8-mobile.jpg     450w,
+                        ./images/project8-mobile@2x.jpg  900w,
+                        ./images/project8-tablet.jpg     354w,
+                        ./images/project8-tablet@2x.jpg  708w,
+                        ./images/project8-desctop.jpg    270w,
+                        ./images/project8-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project8-mobile.jpg"
+                      loading="lazy"
+                      alt="label"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -259,7 +433,23 @@
               <div class="projects-list__article">
                 <a class="projects-list__link" href="#">
                   <div class="product-thumb">
-                    <img src="./images/project9.jpg" alt="laptop" width="370" />
+                    <img
+                      srcset="
+                        ./images/project9-mobile.jpg     450w,
+                        ./images/project9-mobile@2x.jpg  900w,
+                        ./images/project9-tablet.jpg     354w,
+                        ./images/project9-tablet@2x.jpg  708w,
+                        ./images/project9-desctop.jpg    270w,
+                        ./images/project9-desctop@2x.jpg 540w
+                      "
+                      sizes="(min-width: 1200px) 270px,
+                         (min-width: 768px) 354px,
+                         (min-width: 320px) 450px, 100vw"
+                      src="./images/project9-mobile.jpg"
+                      loading="lazy"
+                      alt="laptop"
+                      width="100%"
+                    />
                     <p class="product-thumb__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -283,7 +473,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__nav">
-          <a href="./index.html" lang="en" class="logo-fotter">
+          <a href="./index.html" lang="en" class="logo-footer">
             <span class="logo--accent">Web</span>Studio
           </a>
           <address class="address">
@@ -344,7 +534,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form">
           <p class="footer-title">Підпишіться на розсилку</p>
           <form class="form-subscribe">
             <label>
@@ -365,5 +555,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
   </body>
 </html>

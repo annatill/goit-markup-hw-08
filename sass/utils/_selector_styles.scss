@@ -105,6 +105,12 @@ textarea::placeholder {
     }
 }
 
+.section--portfolio {
+    @media screen and (max-width: 767px) {
+        margin-top: 40px;
+    }
+}
+
 .section-title {
     font-weight: 700;
     text-align: center;
